@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name=referrer content=never>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+</head>
+<body>
+<button onclick="preview()">PDF预览</button>
+</body>
+<script>
+    function preview() {
+        console.log('test');
+        var pdf = 'https://axhl-test-1252661357.cos.ap-shanghai.myqcloud.com/pdf/1536742627489-310270d9-4e12-2640-8cb6-cfc07a6f6d1b.pdf';
+        window.open('./js/pdf/web/viewer.html?file=' + pdf, 'PDF');
+    }
+</script>
+</html>
